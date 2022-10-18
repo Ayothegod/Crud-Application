@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud Application</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .wrapper{
+            display: grid; 
+            color:red;
+            width: 100px;
+            grid-template-columns: repeat(6,1fr);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -16,9 +24,10 @@
         </header>
     </div>
     <div class="container">
-        <a href="/add-user"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-          </svg>
+        <a href="/add-user">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path  stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </svg> -->
           </a>
     </div>
     <div class="container w-96">
@@ -27,7 +36,7 @@
             <!-- 
                 
              -->
-             <div class="m-8 border w-96">
+             <!-- <div class="m-8 border w-96" style="background-color: red;">
                 <div class="first flex justify-between ">
                     <p>ID</p>
                     <p>Name</p>
@@ -44,8 +53,16 @@
                     <p>Coding</p>
                     <p>Action</p>
                 </div>
-             </div>
+             </div> -->
         </form>
+        <div class="wrapper">
+            <div class="first-column">first</div>
+            <div class="second-column">second</div>
+            <div class="third-column">third</div>
+            <div class="fourth-column">fourth</div>
+            <div class="fifth-column">fifth</div>
+            <div class="sixth-column">sixth</div>
+        </div>
     </div>
 </body>
 </html>
