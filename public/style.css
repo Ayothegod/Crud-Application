@@ -1,3 +1,38 @@
-body{
-    background-color: red;
+
+.table{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    max-width: 1000px;
+}
+/* .table-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1000px;
+    border-top: 1px solid rgb(211, 202, 202);
+}
+.table-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1000px;
+    border-top: 1px solid rgb(211, 202, 202);
+} */
+.table-head{
+    background-color: #32383e;
+    color: white;
+}
+.table-body:hover{
+    background-color: #06d6a0;
+}
+.table-head th{
+    padding: 10px 0;
+    width: 500px;
+    border-top: 1px solid rgb(211, 202, 202);
+}
+.table-body td{
+    width: 500px;
+    border-top: 1px solid rgb(211, 202, 202);
+    padding: 10px 0;
 }

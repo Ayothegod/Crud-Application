@@ -2,18 +2,22 @@ const express = require('express')
 const app = express()
 const morgan = require('morgan')
 const bodyparser = require('body-parser')
+const dotenv = require('dotenv')
+port = process.env.PORT || 2000
+const path = require('path')
 
 app.use(morgan('tiny'))
-app.set('view engine',"ejs")
+dotenv.config({path:".env"})
+
 app.use(bodyparser.urlencoded({extended:true}))
 app.use(bodyparser.json())
-port = process.env.PORT || 3000
-// app.use(express.static('views'))
+
+app.set('view engine',"ejs")
 
 
 app.get('/',(req,res)=> {
     res.render('base')
 })
 
-app.listen(port , () => console.log('server is ruuning on localhost:3000')
+app.listen(port , () => console.log(`server is on ${port}`)
 )

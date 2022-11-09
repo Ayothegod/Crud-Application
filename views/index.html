@@ -1,69 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crud Application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .wrapper{
-            display: grid; 
-            color:red;
-            width: 100px;
-            grid-template-columns: repeat(6,1fr);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header class="bg-red-800">
-            <nav>
-                <a href="/" class="text-3xl">User Management System lis a a reload plah skljsdjhjhsd amasksklsdjksdjk</a>
-            </nav>
-        </header>
+    <link rel="stylesheet" href="../public/style.css">
+  </head>
+  <body >
+    <div >
+      <header class="text-3xl text-center py-4 bg-[#06d6a0]">User Management Platform</header>
     </div>
-    <div class="container">
-        <a href="/add-user">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path  stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-          </svg> -->
-          </a>
-    </div>
-    <div class="container w-96">
+    <main class="w-[1000px] text-center mx-auto">
+      <div class="flex mt-4 ml-4 bg-gray-200 w-36 rounded-md ">
+        <a href="/add-user" class="px-4 py-2 ">
+          <span class="font-bold px-2">New User <i class="fa-solid fa-user"></i></span>
+        </a>
+      </div>
+      <div class=" flex align-center justify-center mt-8">
         <form action="/" method="POST">
-            <!-- border-separate  border-spacing-20 //border border-red-800 // border border-red-500 -->
-            <!-- 
-                
-             -->
-             <!-- <div class="m-8 border w-96" style="background-color: red;">
-                <div class="first flex justify-between ">
-                    <p>ID</p>
-                    <p>Name</p>
-                    <p>Email</p>
-                    <p>Gender</p>
-                    <p>Status</p>
-                    <p>Action</p>
-                </div>
-                <div class="second flex">
-                    <p>1</p>
-                    <p>Username</p>
-                    <p>Example@gmail.com</p>
-                    <p>Male</p>
-                    <p>Coding</p>
-                    <p>Action</p>
-                </div>
-             </div> -->
+          <table class="table">
+            <thead>
+              <tr class="table-head">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody >
+              <tr class=" table-body">
+                <td>1</td>
+                <td>Username</td>
+                <td>Example@gmail.com</td>
+                <td>Male</td>
+                <td>active</td>
+                <td>
+                    <a href="update">
+                        <span><i class="fa-solid fa-pencil mr-8"></i></span>
+                    </a>
+                    <a href="delete">
+                        <span><i class="fa-solid fa-trash"></i></span>
+                    </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </form>
-        <div class="wrapper">
-            <div class="first-column">first</div>
-            <div class="second-column">second</div>
-            <div class="third-column">third</div>
-            <div class="fourth-column">fourth</div>
-            <div class="fifth-column">fifth</div>
-            <div class="sixth-column">sixth</div>
-            <div class="sixth-column">sixth</div>
-        </div>
-    </div>
-</body>
+      </div>
+    </main>
+  </body>
 </html>
